@@ -1,3 +1,6 @@
+/**
+ * @author 6510405377 Jitlada Yotinta
+ */
 public class User {
     private String name;
     private String email;

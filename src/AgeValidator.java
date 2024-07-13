@@ -1,5 +1,7 @@
+/**
+ * @author 6510405377 Jitlada Yotinta
+ */
 public class AgeValidator implements Validator{
-
     int minAge;
 
     public AgeValidator(int minAge) {

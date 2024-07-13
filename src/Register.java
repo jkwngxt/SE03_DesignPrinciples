@@ -6,7 +6,9 @@ public class Register {
     public Register(List<Validator> validators) {
         this.validators = validators;
     }
-
+    /**
+     * @author 6510405377 Jitlada Yotinta
+     */
     public boolean register(User user) {
         for (Validator validator : validators) {
             validator.isValid(user);
