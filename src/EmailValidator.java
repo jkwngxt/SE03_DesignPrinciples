@@ -6,10 +6,6 @@ public class EmailValidator implements Validator{
     private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     private List<String> notAllowDomains;
 
-    public EmailValidator() {
-        notAllowDomains = Arrays.asList("dom1.cc", "dom2.cc", "dom3.cc");
-    }
-
     public EmailValidator(List<String> notAllowDomains) {
         this.notAllowDomains = notAllowDomains;
     }

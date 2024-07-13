@@ -2,12 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 public class Register {
     private List<Validator> validators;
-    public Register() {
-        validators = new ArrayList<>();
-        validators.add(new NameValidator());
-        validators.add(new EmailValidator());
-        validators.add(new AgeValidator());
-    }
 
     public Register(List<Validator> validators) {
         this.validators = validators;
@@ -18,5 +12,9 @@ public class Register {
             validator.isValid(user);
         }
         return true;
+    }
+
+    public void addValidator(Validator validator) {
+        validators.add(validator);
     }
 }
